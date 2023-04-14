@@ -24,11 +24,12 @@ body{
 
 .wrapper{
     border: 1px solid gray;
-    border-radius: 6px;
 }
 
 .text-input{
     display: flex;
+    /* flex-direction: column; */
+    /* background-color: red; */
 }
 
 .text-input textarea{
@@ -39,4 +40,72 @@ body{
     outline: none;
     resize: none;
     font-size: 18px;
+    /* border-radius: 6px; */
+}
+.text-input .text-from{
+    border-right: 1px solid black;
+}
+.controls,li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+}
+.controls{
+    border-top: 1px solid black;
+    list-style: none;
+    padding: 10px 30px;
+}
+.controls .row{
+    width: 38%;
+}
+.controls .row .icons i{
+    font-size: 14px;
+    color: gray;
+    width: 40px;
+    text-align: center;
+    cursor: pointer;
+}
+.controls select{
+    outline: none;
+    border: none;
+    font-size: 18px;
+    background: none;
+}
+.controls .exchange{
+    cursor: pointer;
+    color: gray;
+}
+.btn{
+    outline: none;
+    border: none;
+    background-color: rgb(0, 115, 161);
+    width: 100%;
+    padding: 6px 0;
+    font-size: 18px;
+    color: #fff;
+    margin-top: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 572px){
+    .text-input{
+        display: flex;
+        flex-direction: column;
+        /* background-color: red; */
+    }
+    .text-input .text-from{
+        border-right: none;
+        border-bottom: 1px solid black;
+    }
+    .controls .row{
+        width: 44%;
+    }
+    .controls .row .icons i{
+        font-size: 14px;
+        color: gray;
+        width: 30px;
+        text-align: center;
+        cursor: pointer;
+    }
 }
