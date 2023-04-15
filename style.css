@@ -98,6 +98,11 @@ body{
         border-right: none;
         border-bottom: 1px solid black;
     }
+    .controls{
+        border-top: 1px solid black;
+        list-style: none;
+        padding: 10px 10px;
+    }
     .controls .row{
         width: 44%;
     }
